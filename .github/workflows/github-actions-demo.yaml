@@ -30,4 +30,4 @@ jobs:
       - name: get aws version
         run: aws --version
       - name: list bucket
-        run: aws s3 ls
+        run: aws s3 ls --region us-east-1
