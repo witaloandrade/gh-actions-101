@@ -19,6 +19,7 @@ jobs:
   Install-aws-cli:
     runs-on: ubuntu-latest
     steps:
+        uses: actions/checkout@v3
       - name: set secrets
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
