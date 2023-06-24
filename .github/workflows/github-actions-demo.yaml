@@ -19,8 +19,8 @@ jobs:
   Install-aws-cli:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt-get update -y
       - run: |
-          sudo apt-get update -y
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
           unzip awscliv2.zip
           sudo ./aws/install
